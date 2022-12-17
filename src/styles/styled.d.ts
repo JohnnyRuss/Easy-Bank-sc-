@@ -58,7 +58,7 @@ declare module "styled-components" {
     "shadow-lg--white": "0px 0px 10px 3px rgba(200, 200, 200, 0.3)";
     "shadow-bottom-sm--black": "0px 2px 6px rgba(0, 0, 0, 0.5)";
     "shadow-bottom-sm--white": "0px 2px 6px rgba(200, 200, 200, 0.5)";
-    "section-pad-desktop": "5rem 12rem";
+    "section-pad-desktop": "8rem 12rem";
     "border-base": "0.75rem";
     "border-sm": "0.5rem";
   }

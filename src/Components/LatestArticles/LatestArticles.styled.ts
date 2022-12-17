@@ -16,12 +16,8 @@ export const LatestContainer = styled.section`
   `};
 
   .latest-heading__title {
-    ${headingSecondary}
-    text-align:center;
-
-    ${media.tabletLg`
-      text-align:start;
-    `}
+    ${headingSecondary};
+    text-align: center;
   }
 
   .latest-list {

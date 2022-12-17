@@ -8,14 +8,16 @@ const Navigation: React.FC = () => {
 
   return (
     <Nav navIsOpen={navIsOpen}>
-      <Logo />
-      <NavList handleNav={() => setNavIsOpen(false)} />
-      <InviteBTN />
-      <ThemeBTN />
-      <BurgerBTN
-        navIsOpen={navIsOpen}
-        handleNav={() => setNavIsOpen((prev) => !prev)}
-      />
+      <div className="nav-container">
+        <Logo />
+        <NavList handleNav={() => setNavIsOpen(false)} />
+        <InviteBTN />
+        <ThemeBTN />
+        <BurgerBTN
+          navIsOpen={navIsOpen}
+          handleNav={() => setNavIsOpen((prev) => !prev)}
+        />
+      </div>
     </Nav>
   );
 };

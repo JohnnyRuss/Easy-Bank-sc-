@@ -19,6 +19,7 @@ export const WhyChooseContainer = styled.section`
   .choice-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 
     &__title {
@@ -27,7 +28,7 @@ export const WhyChooseContainer = styled.section`
 
     &__description {
       max-width: 100%;
-      ${textColor}
+      ${textColor};
 
       ${media.tabletLg`
         max-width:40rem;
@@ -37,10 +38,6 @@ export const WhyChooseContainer = styled.section`
     &__title,
     &__description {
       text-align: center;
-
-      ${media.tabletLg`
-        text-align:start;
-      `}
     }
   }
 

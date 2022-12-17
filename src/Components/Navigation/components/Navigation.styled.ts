@@ -27,19 +27,22 @@ export const Nav = styled.nav<{ navIsOpen: boolean }>`
   z-index: 19;
   top: 0;
   background: ${({ theme }) => theme.color["bg-color"]};
-  height: 8rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-  padding: 1.5rem 3rem;
-  width: 100%;
-  max-width: ${({ theme }) => theme.breakPoint.container};
-  margin: 0 auto;
   box-shadow: ${({ theme }) =>
     theme.mode.isDark
       ? theme.utils["shadow-bottom-sm--white"]
       : theme.utils["shadow-bottom-sm--black"]};
+
+  .nav-container {
+    width: 100%;
+    max-width: ${({ theme }) => theme.breakPoint.container};
+    margin: 0 auto;
+    height: 8rem;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
 
   [data-invite-btn] {
     display: none;
